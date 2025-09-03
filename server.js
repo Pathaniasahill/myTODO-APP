@@ -18,7 +18,7 @@ app.use(cors())
 app.use(express.json()) // to read jsonbody
 const PORT = process.env.PORT;
 app.listen(PORT,()=>{
-    console.log(`✅ Server running on http://localhost:${PORT}`)
+    console.log(`✅ Server running on port ${PORT}`)
     
 })
 app.post("/api/register",register)
